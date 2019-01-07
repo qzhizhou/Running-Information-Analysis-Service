@@ -87,7 +87,7 @@ password: root
 ```
 ### Create DB
 ```bash
-create database runningInformations
+CREATE DATABASE runningInformations;
 ```
 ### Installation
 ```bash
