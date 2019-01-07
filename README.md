@@ -103,23 +103,19 @@ sh upload-running-informations.sh
 ```
 ### Explore by HAL Browser
 ```bash
-http://localhost:9002/browser/index.html
+http://localhost:9000/browser/index.html
 ```
 Follow rel: **runningInformations GET** to investigate runningInformatios stored on DB.
 ### Explore by Postman
 
 #### For search: **GET**
 ```
-http://localhost:9002/runningInformations?page=0&size=10&property=healthWarningLevel&desc=true
+http://localhost:9000/runningInfo
 
-page: starting page #
-size: # of items per page
-property: name of property to sort by
-desc: true: descending, false: ascending
 ```
 #### For delete by runningId: **DELETE**
 ```
-http://localhost:9002/runningInformations/7c08973d-bed4-4cbd-9c28-9282a02a6032
+http://localhost:9000/runningInfo/7c08973d-bed4-4cbd-9c28-9282a02a6032
 ```
 ## LICENSE
 
