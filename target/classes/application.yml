@@ -1,0 +1,51 @@
+#server:
+#  port: 9000
+#spring:
+#  application:
+#    name: running-information-service
+#  datasource:
+#    url: jdbc:mysql://localhost/running_information_db
+#    username: root
+#    password: root
+#    jdbc.driver-class-name: com.mysql.jdbc.Driver
+#  jpa:
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        use_sql_comments: true
+#        format_sql: true
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+#    hibernate.ddl-auto: update
+#
+
+
+server:
+  port: 9000
+
+spring:
+  application:
+    name: running-information-analysis-service
+
+  datasource:
+    url: jdbc:mysql://localhost/running_information_db
+    username: root
+    password: root
+    jdbc.driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    #    database: MYSQL
+    #    show-sql: true
+    hibernate.ddl-auto: create-drop
+
+#    database-platform: MYSQL
+#    hibernate:
+#      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
